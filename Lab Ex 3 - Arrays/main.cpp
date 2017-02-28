@@ -13,6 +13,8 @@
 	[ ] Compress(zip) your program and submit it to Blackboard.
 */
 
+//Andrew, Riley, and Sharad
+
 #include <iostream>
 #include <conio.h>
 
@@ -22,7 +24,7 @@ int main()
 {
 	int count; 
 
-	cout << "how mant intigers would you like? (at least 5) ";
+	cout << "How many intigers would you like? (at least 5) ";
 	cin >> count;
 
 	int *array = new int[count];
@@ -31,14 +33,34 @@ int main()
 	{
 		for (int i = 0; i < count; i++)
 		{
-			cout << "number:";
+			cout << "Number:";
 			cin >> array[i];
 		}
-
+		cout << "The numbers in reverse order are: ";
 		for (int i = (count - 1); i >= 0; i--)
 		{
-			cout << count;
+			cout << array[i] << ", ";
 		}
+		cout << endl << endl;
+		int highnum = 0;
+		int lownum= array[0];
+
+		for (int i = 0; i < array[i]; i++)
+		{
+			if (array[i] > highnum) {
+				highnum = array[i];
+			}
+		}
+		cout <<  "The highest int is: " << highnum << endl;
+
+		for (int i = 0; i < array[i]; i++)
+		{
+			if (array[i] < lownum) {
+				lownum = array[i];
+			}
+		}
+		cout << "The lowest int is: " << lownum;
+
 	}
 	else {
 		cout << "That is not above 5";
