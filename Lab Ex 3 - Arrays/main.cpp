@@ -20,7 +20,29 @@ using namespace std;
 
 int main()
 {
+	int count; 
 
+	cout << "how mant intigers would you like? (at least 5) ";
+	cin >> count;
+
+	int *array = new int[count];
+
+	if (count >= 5)
+	{
+		for (int i = 0; i < count; i++)
+		{
+			cout << "number:";
+			cin >> array[i];
+		}
+
+		for (int i = (count - 1); i >= 0; i--)
+		{
+			cout << count;
+		}
+	}
+	else {
+		cout << "That is not above 5";
+	}
 
 	_getch();
 	return 0;
